@@ -1,7 +1,12 @@
 :root{
-    --cor-de-fundo: #235668;
-    --cor-header: #003F5A;
+    --cor-de-fundo: #16436F;
+    --cor-header:  #0A1F40;
+    --braco-principal: #FFFFFF;
+    --cor-logo: #edc531;
     --font-Inter: 'inter';
+    --font-Merriweather-Sans:'Merriweather Sans';
+    --font-Roboto-Slab: 'Roboto Slab';
+    --font-Rubik: 'Rubik';
 }
 *{
     margin: 0;
@@ -13,11 +18,40 @@ body{
 }
 /*inicio header*/
 header{
-    background-color: var(--cor-header);
-    height: 100px;
+background-color: var(--cor-header);
+    height:  100px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.logo{
-    max-width: 50%;
-    border-radius: 50%;
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 75em;
+    align-items: center;
+}
+.nome_logo{
+    color: var(--cor-logo);
+    lighting-color: yellow;
+    text-shadow:  0 0 2px var(--cor-logo);
+    font-family: var(--font-Roboto-Slab);
+    font-size: 14px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 32em;
+    height: 35px;
+    margin-top: 15px;
+}
+.menu a{
+    text-decoration: none;
+    font-family: var(--font-Merriweather-Sans);
+    font-weight: 600;
+    color: var(--braco-principal);
+    font-size: 20px;
 }
 /*final header*/
